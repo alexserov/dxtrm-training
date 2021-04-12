@@ -5,8 +5,8 @@ tests
    - bundles
    - modules
 
-init github
-add a github action that runs `test` script
++init github
++add a github action that runs `test` script
 install webpack as a dev dependenty
 create a npm script that builds sources.js
 create an entry point for webpack

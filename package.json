@@ -7,11 +7,14 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
   }
 }
