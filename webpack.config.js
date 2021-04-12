@@ -10,11 +10,15 @@ export default {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader']
+        test: /\.m?js$/,        
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
-    ]
+    ]  
   },
   resolve: {
     extensions: ['*', '.js']
