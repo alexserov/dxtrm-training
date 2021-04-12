@@ -12,3 +12,6 @@ tests
 +create an entry point for webpack
 +build webpack -> dist.bundle
 +html -> add bundle & use namespace module
+imports and exports - using ES6
+add transpiling (webpack & babel) so that IE could use it
+test jest 

@@ -1,3 +1,3 @@
 window.playground = {};
 
-playground.button = require('./button.js');
+playground.button = import('./button.js');
