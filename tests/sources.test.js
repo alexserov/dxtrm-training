@@ -1,5 +1,5 @@
 const { test, expect } = require("@jest/globals");
-const sources = require("../src/sources");
+const sources = require("../src/button");
 
 test('test markup generated', ()=>{
     let someelement = document.createElement('div');

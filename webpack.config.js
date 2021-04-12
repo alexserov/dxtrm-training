@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/sources.js',  
+  entry: './src/entrypoint.js',  
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    library: 'playground'
+    filename: 'bundle.js',       
   },
 };
