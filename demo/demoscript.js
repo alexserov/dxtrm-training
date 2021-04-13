@@ -1,4 +1,4 @@
-new playground.MyButton(
+let button1 = new playground.MyButton(
         document.getElementById('button1'), 
         { 
             text: 'Simple button', 
@@ -6,7 +6,7 @@ new playground.MyButton(
         }
     );
 
-new playground.MaterialButton(
+let button2 = new playground.MaterialButton(
         document.getElementById('button2'), 
         { 
             text: 'Material button', 
@@ -14,3 +14,13 @@ new playground.MaterialButton(
             color: '#65bff0'
         }
     );
+
+document.getElementById('update').addEventListener('click', ()=>{
+    button1.option({
+        text: 'Simple button UPDATED'
+    });
+    button2.option({
+        text: 'Material button UPDATED',
+        color: '#12c921'
+    });
+});

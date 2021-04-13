@@ -1,7 +1,6 @@
 export class MyButton {  
     target;
     currentOptions;
-    optionChangedCallbacks;
     constructor(target, creationOptions) {
         target.classList.add('my-button');
         
