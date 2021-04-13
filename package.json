@@ -9,16 +9,18 @@
   },
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "http-server -c-1 -p 8080 -o demo/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.15",
-    "@babel/preset-env": "^7.13.15",    
-    "babel-loader": "^8.2.2",    
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
-    "jest": "^26.6.3",
+    "http-server": "^0.12.3",
+    "jest": "^26.6.3",    
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0"
   },
