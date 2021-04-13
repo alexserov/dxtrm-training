@@ -5,7 +5,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 export default {
-  entry: './src/entrypoint.js',  
+  entry: {
+    playground: './src/entrypoint.js',
+    playgroundStyles: './src/styles.less'
+  },  
   mode: 'production',
   module: {
     rules: [
@@ -18,7 +21,26 @@ export default {
                   presets: ["@babel/preset-env"],                
               }
           }
-      }
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "less-loader",
+            options: {
+              lessOptions: {
+                strictMath: true,
+              },
+            },
+          },
+        ]   
+      },      
     ]
   },
   resolve: {
@@ -26,7 +48,7 @@ export default {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: 'bundle.js',       
+    filename: '[name].js',       
     environment: {
       arrowFunction: false,
       module: false
