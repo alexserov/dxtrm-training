@@ -24,14 +24,18 @@
     "css-loader": "^5.2.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-header": "^2.0.9",
     "gulp-less": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
     "http-server": "^0.12.3",
     "jest": "^26.6.3",
     "less": "^3.13.1",
     "less-loader": "^8.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.31.2",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-stream": "^6.1.2"
   },
   "jest": {
     "transform": {}
