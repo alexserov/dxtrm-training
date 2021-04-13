@@ -1,13 +1,14 @@
 import { MyButton } from './button.js'
 
 export class MaterialButton extends MyButton {
-    create(target, creationOptions) {
-        super.create(target, creationOptions);
-        
-        target.classList.add('material')
+    initDefaultOptions() {
+        super.initDefaultOptions();
 
-        if(!!creationOptions.color){            
-            target.style.backgroundColor = creationOptions.color;
-        }
+        this.registerOption('color', this.onColorChanged);
     }
+
+    onColorChanged(that, oldValue, newValue) {
+        that.target.style.backgroundColor = newValue;
+    }
+
 }

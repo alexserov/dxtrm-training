@@ -1,10 +1,10 @@
 import { test, expect } from "@jest/globals";
-import * as button from "../src/button";
+import { MyButton } from "../src/button";
 
 test('test markup generated', ()=>{
     let someelement = document.createElement('div');
     
-    new button.MyButton().create(someelement, {
+    let button = new MyButton(someelement, {
         text: 'hello',        
     });    
     expect(!!someelement.getElementsByClassName('my-button')).toBe(true);    
@@ -13,15 +13,25 @@ test('test markup generated', ()=>{
 test('test event is fired', ()=>{
     let someelement = document.createElement('div');
     
-    let called = false;
+    let called = 0;
     
-    new button.MyButton().create(someelement, {
+    let button = new MyButton(someelement, {
         text: 'hello',        
-        onClick: () => called = true
+        onClick: () => called++
     });        
     
     let event = new Event('click');
     someelement.dispatchEvent(event);
 
-    expect(called).toBe(true);
+    expect(called).toBe(1);
+
+    let called2 = 0;
+    button.option({
+        onClick: () => called2++
+    });
+
+    someelement.dispatchEvent(event);
+
+    expect(called).toBe(1);
+    expect(called2).toBe(1);
 });
