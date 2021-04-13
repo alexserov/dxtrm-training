@@ -5,13 +5,15 @@ tests
    - bundles
    - modules
 
-+init github
-+add a github action that runs `test` script
-+install webpack as a dev dependenty
-+create a npm script that builds sources.js
-+create an entry point for webpack
-+build webpack -> dist.bundle
-+html -> add bundle & use namespace module
-imports and exports - using ES6
-add transpiling (webpack & babel) so that IE could use it
-test jest 
+- [x] init github
+- [x] add a github action that runs `test` script
+- [x] install webpack as a dev dependenty
+- [x] create a npm script that builds sources.js
+- [x] create an entry point for webpack
+- [x] build webpack -> dist.bundle
+- [x] html -> add bundle & use namespace module
+- [x] imports and exports - using ES6
+- [x] add transpiling (webpack & babel) so that IE could use it
+- [x] test jest 
+- [x] add gated checkin (with review and GA check)
+- [ ] button: fit width to content
