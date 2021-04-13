@@ -16,4 +16,8 @@ tests
 - [x] add transpiling (webpack & babel) so that IE could use it
 - [x] test jest 
 - [x] add gated checkin (with review and GA check)
-- [ ] button: fit width to content
+- [x] button: fit width to content
+- [x] move button creation logic to a class
+- [x] create a class deriving from the button, make different appearance + add the `color` option
+- [ ] styles: migrate from CSS to LESS
+- [ ] styles: create separate styles bundle

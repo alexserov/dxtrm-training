@@ -8,7 +8,8 @@ export class MyButton {
             target.appendChild(textContainer);
         }
 
-        if(!!creationOptions.onClick)
+        if(!!creationOptions.onClick) {
             target.addEventListener('click', creationOptions.onClick);
+        }            
     }
 }
