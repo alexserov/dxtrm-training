@@ -31,5 +31,8 @@
   },
   "jest": {
     "transform": {}
-  }
+  },
+  "files": [
+    "./dist/playground*.js"
+  ]
 }

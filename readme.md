@@ -19,5 +19,9 @@ tests
 - [x] button: fit width to content
 - [x] move button creation logic to a class
 - [x] create a class deriving from the button, make different appearance + add the `color` option
-- [ ] styles: migrate from CSS to LESS
-- [ ] styles: create separate styles bundle
+- [x] styles: migrate from `CSS` to `LESS`
+- [x] styles: create separate styles bundle
+- [x] optimize `npm pack`
+- [ ] create two build tasks (`dev` and `product`) using `gulp`
+  - [ ] the `dev` task should contain non-minimized code
+  - [ ] the `product` task should add a header containing version and copyright
