@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { MyButton } from "../src/button";
+import { MyButton } from "../src/MyButton/sources";
 
 test('test markup generated', ()=>{
     let someelement = document.createElement('div');

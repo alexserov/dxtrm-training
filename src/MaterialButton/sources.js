@@ -1,4 +1,4 @@
-import { MyButton } from './button.js'
+import { MyButton } from '../MyButton/sources.js'
 
 export class MaterialButton extends MyButton {
     initDefaultOptions() {
