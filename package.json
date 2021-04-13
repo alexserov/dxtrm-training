@@ -37,6 +37,7 @@
     "transform": {}
   },
   "files": [
-    "./dist/playground*.js"
+    "./dist/playground.js",
+    "./dist/playgroundStyles.css"
   ]
 }
