@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "styles": "lessc src/styles.less dist/styles.css",
-    "build": "webpack",
+    "styles": "lessc src/styles.less dist/playgroundStyles.css",
+    "build": "npm run styles && webpack",
     "start": "npm run build && http-server -c-1 -p 8080 -o demo/index.html"
   },
   "author": "",

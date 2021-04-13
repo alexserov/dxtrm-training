@@ -6,8 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default {
   entry: {
-    playground: './src/entrypoint.js',
-    playgroundStyles: './src/styles.less'
+    playground: './src/entrypoint.js',    
   },  
   mode: 'production',
   module: {
@@ -22,26 +21,7 @@ export default {
                   plugins: ["@babel/plugin-proposal-class-properties"]
               }
           }
-      },
-      {
-        test: /\.less$/i,
-        use: [
-          {
-            loader: "style-loader",
-          },
-          {
-            loader: "css-loader",
-          },
-          {
-            loader: "less-loader",
-            options: {
-              lessOptions: {
-                strictMath: true,
-              },
-            },
-          },
-        ]   
-      },      
+      }      
     ]
   },
   resolve: {
