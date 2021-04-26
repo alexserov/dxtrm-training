@@ -1,3 +1,7 @@
-window.playground = {};
+import { MyButton } from './MyButton/sources.js';
+import { MaterialButton } from './MaterialButton/sources.js';
 
-playground.button = import('./button.js');
+window.playground = {
+    MyButton,
+    MaterialButton
+};

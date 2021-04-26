@@ -5,7 +5,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 export default {
-  entry: './src/entrypoint.js',  
+  entry: {
+    playground: './src/entrypoint.js',    
+  },  
   mode: 'production',
   module: {
     rules: [
@@ -16,9 +18,10 @@ export default {
               loader: "babel-loader",
               options: {
                   presets: ["@babel/preset-env"],                
+                  plugins: ["@babel/plugin-proposal-class-properties"]
               }
           }
-      }
+      }      
     ]
   },
   resolve: {
@@ -26,7 +29,7 @@ export default {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: 'bundle.js',       
+    filename: '[name].js',       
     environment: {
       arrowFunction: false,
       module: false
